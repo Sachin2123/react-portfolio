@@ -165,7 +165,7 @@ const Home = () => {
               </Typography>
             </Box>
 
-            <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
               Experienced{" "}
               <span style={{ color: "#1976d2", fontWeight: "bold" }}>
                 Full-Stack Developer
