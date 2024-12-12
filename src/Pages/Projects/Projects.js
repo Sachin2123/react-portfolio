@@ -12,7 +12,6 @@ import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackg
 const Projects = () => {
   return (
     <Box sx={{ position: "relative", minHeight: "100vh" }}>
-      {/* Animated Background */}
       <AnimatedBackground />
 
       <Grid
@@ -187,29 +186,6 @@ const Projects = () => {
                 mt: 3,
               }}
             >
-              <DirectionsCarIcon
-                sx={{ color: "#1976d2", fontSize: "25px", ml: 0 }}
-              />
-              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 0 }}>
-                PR Hyundai (India)
-              </Typography>
-            </Box>
-
-            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
-            </Typography>
-
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-                ml: 2,
-                mb: 2,
-                mt: 3,
-              }}
-            >
               <Hospital color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 0 }}>
                 MGM Hospital & Research Centre (India)
@@ -217,8 +193,16 @@ const Projects = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
+              Installed Spine HRMS, Payroll, and MobileHR solutions on client
+              premises.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Developed customized letter and payslip templates using HTML and
+              CSS to meet client requirements.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Installed and configured Microsoft SQL Server Management Studio
+              for database management of the Spine HR Suite.
             </Typography>
 
             <Box
@@ -238,8 +222,16 @@ const Projects = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
+              Integrated biometric devices for attendance tracking with Spine HR
+              Suite, enhancing accuracy and efficiency.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Designed and implemented customized letter and payslip templates
+              using HTML and CSS to meet client specifications.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Managed application migration during the transition from desktop
+              to web-based platforms.
             </Typography>
           </Paper>
         </Grid>

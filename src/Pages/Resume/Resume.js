@@ -39,10 +39,10 @@ const Resume = () => {
             }}
           >
             <Typography
-              variant="h5"
+              variant="h6"
               sx={{
                 color: "#fff",
-                marginTop: "3rem",
+                marginTop: "1rem",
                 fontWeight: "600",
                 textAlign: "center",
               }}
@@ -59,8 +59,8 @@ const Resume = () => {
               target="_blank"
               rel="noopener noreferrer"
               sx={{
-                marginTop: "3rem",
-                marginBottom: "2.5rem",
+                marginTop: "2rem",
+                marginBottom: "1rem",
                 fontWeight: "700",
                 padding: "0.8rem 2.5rem",
                 color: "white",

@@ -12,10 +12,10 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import BusinessIcon from "@mui/icons-material/Business";
 import HotelIcon from "@mui/icons-material/Hotel";
 import TvIcon from "@mui/icons-material/Tv";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   const Icons = [
@@ -91,11 +91,17 @@ const Home = () => {
               borderRadius: "15px",
             }}
           >
-            <Typography variant="h3" sx={{ color: "#1976d2", mb: 2 }}>
+            <Typography
+              variant="h3"
+              sx={{ color: "#1976d2", mb: 2, fontWeight: "bold" }}
+            >
               Sachin Vishwakarma
             </Typography>
-            <Typography variant="h5" sx={{ color: "white", mb: 5 }}>
-              Full Stack Developer
+            <Typography
+              variant="h5"
+              sx={{ color: "white", mb: 4, fontStyle: "" }}
+            >
+              Full-Stack Developer | Creating Innovative Digital Solutions
             </Typography>
             <Grid
               container
@@ -113,6 +119,7 @@ const Home = () => {
                   sx={{
                     display: "flex",
                     justifyContent: "center",
+                    mt:1
                   }}
                 >
                   <Button
@@ -208,10 +215,10 @@ const Home = () => {
               <Typography variant="h5" sx={{ color: "#1976d2", ml: 2 }}>
                 Bachelor of Science in Information Technology
               </Typography>
-              <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                 Mumbai University | 2019 - 2022
               </Typography>
-              <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                 Focused on software development, data structures, and web
                 technologies.
               </Typography>
@@ -524,29 +531,6 @@ const Home = () => {
                 mt: 3,
               }}
             >
-              <DirectionsCarIcon
-                sx={{ color: "#1976d2", fontSize: "25px", ml: 0 }}
-              />
-              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 0 }}>
-                PR Hyundai (India)
-              </Typography>
-            </Box>
-
-            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
-            </Typography>
-
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-                ml: 2,
-                mb: 2,
-                mt: 3,
-              }}
-            >
               <Hospital color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 0 }}>
                 MGM Hospital & Research Centre (India)
@@ -554,8 +538,16 @@ const Home = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
+              Installed Spine HRMS, Payroll, and MobileHR solutions on client
+              premises.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Developed customized letter and payslip templates using HTML and
+              CSS to meet client requirements.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Installed and configured Microsoft SQL Server Management Studio
+              for database management of the Spine HR Suite.
             </Typography>
 
             <Box
@@ -575,8 +567,16 @@ const Home = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Built an intuitive hotel booking system using React.js for
-              seamless user experience.
+              Integrated biometric devices for attendance tracking with Spine HR
+              Suite, enhancing accuracy and efficiency.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Designed and implemented customized letter and payslip templates
+              using HTML and CSS to meet client specifications.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Managed application migration during the transition from desktop
+              to web-based platforms.
             </Typography>
           </Paper>
         </Grid>

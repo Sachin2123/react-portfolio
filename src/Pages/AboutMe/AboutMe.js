@@ -84,7 +84,10 @@ const AboutMe = () => {
               borderRadius: "15px",
             }}
           >
-            <Typography variant="h3" sx={{ color: "#1976d2", mb: 2 }}>
+            <Typography
+              variant="h3"
+              sx={{ color: "#1976d2", mb: 2, fontWeight: "bold" }}
+            >
               Hi, I'm Sachin Vishwakarma!
             </Typography>
             <Typography variant="h5" sx={{ color: "white", mb: 5 }}>
@@ -160,7 +163,7 @@ const AboutMe = () => {
               </Typography>
             </Box>
 
-            <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
               Experienced{" "}
               <span style={{ color: "#1976d2" }}>Full-Stack Developer</span>{" "}
               with over 2+ years of expertise in designing and delivering
@@ -202,10 +205,10 @@ const AboutMe = () => {
               <Typography variant="h5" sx={{ color: "#1976d2", ml: 2 }}>
                 Bachelor of Science in Information Technology
               </Typography>
-              <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                 Mumbai University | 2019 - 2022
               </Typography>
-              <Typography variant="h6" sx={{ color: "white", ml: 2 }}>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                 Focused on software development, data structures, and web
                 technologies.
               </Typography>
