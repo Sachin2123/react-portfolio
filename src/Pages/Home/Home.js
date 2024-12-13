@@ -118,7 +118,7 @@ const Home = () => {
                   sx={{
                     display: "flex",
                     justifyContent: "center",
-                    mt:1
+                    mt: 1,
                   }}
                 >
                   <Button
@@ -354,12 +354,20 @@ const Home = () => {
                           mb: 1,
                         }}
                       >
-                        {category === "Frontend" ||
-                        category === "Backend" ||
-                        category === "Tools" ||
-                        category === "Responsive"
-                          ? "Advance"
-                          : ""}
+                        {(category === "Frontend" &&
+                          item[category.toLowerCase()] === "Next JS") ||
+                        (category === "Tools" &&
+                         ( item[category.toLowerCase()] === "Github" || item[category.toLowerCase()] === "Postman")) ||
+                        (category === "Backend" &&
+                          (item[category.toLowerCase()] === "Node JS" ||
+                            item[category.toLowerCase()] === "Express JS"))
+                          ? "Intermediate"
+                          : category === "Frontend" ||
+                            category === "Backend" ||
+                            category === "Tools" ||
+                            category === "Responsive"
+                          ? "Advanced"
+                          : "Beginner"}
                       </Typography>
                     </Box>
                   )
