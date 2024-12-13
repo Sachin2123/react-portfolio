@@ -4,12 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import SchoolIcon from "@mui/icons-material/School";
-import WorkIcon from "@mui/icons-material/Work";
 import RoomIcon from "@mui/icons-material/Room";
-import ComputerIcon from "@mui/icons-material/Computer";
 import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser } from "lucide-react";
-import { useRef, useEffect } from "react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 
 const AboutMe = () => {

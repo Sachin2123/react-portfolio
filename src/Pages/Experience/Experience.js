@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Grid, Typography, Paper, Box } from "@mui/material";
+import { Grid, Typography, Paper, Box } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 

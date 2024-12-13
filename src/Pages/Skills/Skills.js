@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
+import { Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import ComputerIcon from "@mui/icons-material/Computer";
-import { useRef, useEffect } from "react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 
 const Skills = () => {

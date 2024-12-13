@@ -4,7 +4,6 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import BusinessIcon from "@mui/icons-material/Business";
 import HotelIcon from "@mui/icons-material/Hotel";
 import TvIcon from "@mui/icons-material/Tv";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import { Grid, Typography, Paper, Box } from "@mui/material";
 import { FolderClosed, Hospital } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";

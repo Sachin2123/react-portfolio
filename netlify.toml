@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/static/favicon.ico"
+  status = 200

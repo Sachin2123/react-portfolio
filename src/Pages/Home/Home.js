@@ -15,7 +15,6 @@ import TvIcon from "@mui/icons-material/Tv";
 import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
-import Projects from "../Projects/Projects";
 
 const Home = () => {
   const Icons = [
