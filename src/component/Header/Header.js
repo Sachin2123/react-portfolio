@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import ProfilePicture from "../../Picture/ProfilePicture.jpeg";
 import { useNavigate } from "react-router-dom";
 
@@ -29,7 +28,7 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const navigate = useNavigate();
 
@@ -58,7 +57,7 @@ const Header = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: "transparent",
+          // backgroundColor: "transparent",
           boxShadow: "none",
           top: 0,
           backgroundColor: "rgba(13, 29, 58, 0.8)",
@@ -144,7 +143,7 @@ const Header = () => {
               <Menu
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
-                anchorEl={anchorElUser}
+                // anchorEl={anchorElUser}
                 anchorOrigin={{
                   vertical: "top",
                   horizontal: "right",
@@ -154,7 +153,7 @@ const Header = () => {
                   vertical: "top",
                   horizontal: "right",
                 }}
-                open={Boolean(anchorElUser)}
+                // open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
                 {settings.map((setting) => (

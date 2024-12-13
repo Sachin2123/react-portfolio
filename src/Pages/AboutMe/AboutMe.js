@@ -5,7 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import SchoolIcon from "@mui/icons-material/School";
 import RoomIcon from "@mui/icons-material/Room";
-import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
+import { Button, Grid, Typography, Paper, Box } from "@mui/material";
 import { FileUser } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 
@@ -34,23 +34,6 @@ const AboutMe = () => {
       IconName: "WhatsApp",
       icons: WhatsAppIcon,
     },
-  ];
-
-  const Skills = [
-    { frontend: "React JS" },
-    { frontend: "Next JS" },
-    { frontend: "Javascript" },
-    { frontend: "HTML" },
-    { frontend: "CSS" },
-    { backend: "Express JS" },
-    { backend: "Node JS" },
-    { backend: "MySQL" },
-    { responsive: "Material UI" },
-    { responsive: "Bootstrap" },
-    { tools: "Postman" },
-    { tools: "Visual Studio Code" },
-    { tools: "Netlify" },
-    { tools: "Github" },
   ];
 
   return (
