@@ -5,7 +5,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import HotelIcon from "@mui/icons-material/Hotel";
 import TvIcon from "@mui/icons-material/Tv";
 import { Grid, Typography, Paper, Box } from "@mui/material";
-import { FolderClosed, Hospital } from "lucide-react";
+import { FolderClosed, Hospital, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 
 const Projects = () => {
@@ -59,6 +59,43 @@ const Projects = () => {
                 gap: "10px",
                 ml: 2,
                 mb: 2,
+              }}
+            >
+              <Calculator color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
+                Pension Calculator - Finance Planning (UK){" "}
+              </Typography>
+            </Box>
+
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Implemented diverse calculations and factors to meet varying user
+              needs.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Designed and built the complete backend and frontend architecture
+              using React.js.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Created customized dynamic charts that adapt based on slider
+              ranges, ensuring an interactive user experience.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Delivered a responsive, user-friendly interface for seamless
+              usability.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Deployed the project independently on Netlify, leveraging GitHub
+              for efficient version control.
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                ml: 2,
+                mb: 2,
+                mt: 3,
               }}
             >
               <ApartmentIcon
