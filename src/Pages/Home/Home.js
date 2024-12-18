@@ -255,6 +255,18 @@ const Home = () => {
 
             <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Freelancing Projects
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                Pension Calculator - Finance Planning (UK)
+              </Typography>
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                Dec 2024 - Dec 2024
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 4 }}>
                 Full Stack Developer - Intern
               </Typography>
               <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
