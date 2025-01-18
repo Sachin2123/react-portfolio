@@ -174,7 +174,7 @@ const Home = () => {
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
               Experienced{" "}
               <span style={{ color: "#1976d2", fontWeight: "bold" }}>
-                Full-Stack Developer
+                Frontend Developer
               </span>{" "}
               with over 2+ years of expertise in designing and delivering
               scalable web solutions across industries such as real estate,
