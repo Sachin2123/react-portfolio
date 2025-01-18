@@ -145,13 +145,13 @@ const AboutMe = () => {
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
               Experienced{" "}
-              <span style={{ color: "#1976d2" }}>Full-Stack Developer</span>{" "}
-              with over 2+ years of expertise in designing and delivering
-              scalable web solutions across industries such as real estate,
-              hospitality, and textiles. Proficient in modern technologies
-              including React.js, Next.js, and Node.js, with a strong focus on
-              creating intuitive user interfaces and optimizing backend
-              performance for seamless user experiences.
+              <span style={{ color: "#1976d2" }}>Frontend Developer</span> with
+              over 2+ years of expertise in designing and delivering scalable
+              web solutions across industries such as real estate, hospitality,
+              and textiles. Proficient in modern technologies including
+              React.js, Next.js, and Node.js, with a strong focus on creating
+              intuitive user interfaces and optimizing backend performance for
+              seamless user experiences.
             </Typography>
           </Paper>
         </Grid>

@@ -100,7 +100,7 @@ const Home = () => {
               variant="h5"
               sx={{ color: "white", mb: 4, fontStyle: "" }}
             >
-              Full-Stack Developer | Creating Innovative Digital Solutions
+              Frontend Developer | Creating Innovative Digital Solutions
             </Typography>
             <Grid
               container
