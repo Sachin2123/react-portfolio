@@ -71,7 +71,7 @@ const AboutMe = () => {
               Hi, I'm Sachin Vishwakarma!
             </Typography>
             <Typography variant="h5" sx={{ color: "white", mb: 5 }}>
-              A Full Stack Developer with a knack for building scalable web
+              A Frontend Developer with a knack for building scalable web
               solutions and enhancing user experiences.
             </Typography>
 
