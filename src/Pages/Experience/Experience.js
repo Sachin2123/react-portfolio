@@ -29,6 +29,7 @@ const Experience = () => {
               backgroundColor: "rgba(13, 29, 58, 0.8)",
               //   backdropFilter: "blur(10px)",
               borderRadius: "15px",
+              mb: 11,
             }}
           >
             <Box
@@ -56,6 +57,20 @@ const Experience = () => {
               </Typography>
               <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
                 Jan 2025 - Present
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{ display: "flex", gap: 1, flexDirection: "column", mt: 4 }}
+            >
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Freelancing Projects
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                Iraa Interiors – Your Dream Home Start Here!
+              </Typography>
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                Feb 2025 - Feb 2025
               </Typography>
             </Box>
 
