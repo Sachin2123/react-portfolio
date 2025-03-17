@@ -7,6 +7,7 @@ import TvIcon from "@mui/icons-material/Tv";
 import { Grid, Typography, Paper, Box } from "@mui/material";
 import { FolderClosed, Hospital, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
+import { Armchair } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -59,6 +60,37 @@ const Projects = () => {
                 gap: "10px",
                 ml: 2,
                 mb: 2,
+              }}
+            >
+              <Armchair color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
+                Iraa Interiors – Your Dream Home Start Here!
+              </Typography>
+            </Box>
+
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Iraa Interiors is a modern interior design web application that
+              helps users visualize and plan their dream spaces effortlessly.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Designed with a focus on user experience, interactivity, and
+              dynamic customization, this platform simplifies the interior
+              design process by providing real-time calculations, interactive
+              design elements, and a responsive interface.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Created whole software using Reactjs, Material UI (Grid,
+              Components)
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                ml: 2,
+                mb: 2,
+                mt: 3,
               }}
             >
               <Calculator color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />

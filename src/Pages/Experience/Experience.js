@@ -49,6 +49,18 @@ const Experience = () => {
 
             <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Assistant Manager - Payroll & HRMS
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                Beehive Software Pvt. Ltd.
+              </Typography>
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                Jan 2025 - Present
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2, mt: 4 }}>
                 Freelancing Projects
               </Typography>
               <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>

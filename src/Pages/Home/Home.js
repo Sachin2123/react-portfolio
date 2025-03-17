@@ -15,6 +15,7 @@ import TvIcon from "@mui/icons-material/Tv";
 import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
+import { Armchair } from "lucide-react";
 
 const Home = () => {
   const Icons = [
@@ -255,6 +256,34 @@ const Home = () => {
 
             <Box sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Assistant Manager - Payroll & HRMS
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                Beehive Software Pvt. Ltd.
+              </Typography>
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                Jan 2025 - Present
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{ display: "flex", gap: 1, flexDirection: "column", mt: 4 }}
+            >
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Freelancing Projects
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                Iraa Interiors – Your Dream Home Start Here!
+              </Typography>
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                Feb 2025 - Feb 2025
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{ display: "flex", gap: 1, flexDirection: "column", mt: 4 }}
+            >
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
                 Freelancing Projects
               </Typography>
               <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
@@ -425,6 +454,37 @@ const Home = () => {
                 gap: "10px",
                 ml: 2,
                 mb: 2,
+              }}
+            >
+              <Armchair color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
+                Iraa Interiors – Your Dream Home Start Here!
+              </Typography>
+            </Box>
+
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Iraa Interiors is a modern interior design web application that
+              helps users visualize and plan their dream spaces effortlessly.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Designed with a focus on user experience, interactivity, and
+              dynamic customization, this platform simplifies the interior
+              design process by providing real-time calculations, interactive
+              design elements, and a responsive interface.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Created whole software using Reactjs, Material UI (Grid,
+              Components)
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                ml: 2,
+                mb: 2,
+                mt: 3,
               }}
             >
               <Calculator color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
