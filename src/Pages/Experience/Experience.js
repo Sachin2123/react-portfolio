@@ -27,7 +27,6 @@ const Experience = () => {
               padding: "20px",
               //   textAlign: "center",
               backgroundColor: "rgba(13, 29, 58, 0.8)",
-              //   backdropFilter: "blur(10px)",
               borderRadius: "15px",
               mb: 11,
             }}
@@ -37,7 +36,6 @@ const Experience = () => {
                 display: "flex",
                 alignItems: "center",
                 gap: "10px",
-                // justifyContent: "center",
                 ml: 2,
                 mb: 2,
               }}

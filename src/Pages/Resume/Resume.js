@@ -6,7 +6,7 @@ import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackg
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/Resume.pdf";
     link.download = "Sachin_Vishwakarma.pdf";
     link.click();
   };
