@@ -16,6 +16,7 @@ import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 import { Armchair } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const Icons = [
@@ -61,6 +62,8 @@ const Home = () => {
     { tools: "Github" },
     { tools: "Lucide" },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <Box sx={{ position: "relative", minHeight: "100vh" }}>
@@ -272,9 +275,26 @@ const Home = () => {
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
                 Freelancing Projects
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-                Iraa Interiors – Your Dream Home Start Here!
-              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center", // vertically center
+                  justifyContent: "space-between", // horizontally center
+                }}
+              >
+                <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                  Iraa Interiors – Your Dream Home Start Here!
+                </Typography>
+
+                <Button
+                  onClick={() =>
+                    window.open("https://iraainteriors.netlify.app/", "_blank")
+                  }
+                >
+                  Link
+                </Button>
+              </Box>
+
               <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
                 Feb 2025 - Feb 2025
               </Typography>
@@ -286,9 +306,27 @@ const Home = () => {
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
                 Freelancing Projects
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-                Pension Calculator - Finance Planning (UK)
-              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center", // vertically center
+                  justifyContent: "space-between", // horizontally center
+                }}
+              >
+                <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                  Pension Calculator - Finance Planning (UK)
+                </Typography>
+                <Button
+                  onClick={() =>
+                    window.open(
+                      "https://pensionbeecalculator.netlify.app/",
+                      "_blank"
+                    )
+                  }
+                >
+                  Link
+                </Button>
+              </Box>
               <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
                 Dec 2024 - Dec 2024
               </Typography>
