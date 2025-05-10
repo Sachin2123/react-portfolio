@@ -16,7 +16,6 @@ import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 import { Armchair } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const Icons = [
@@ -62,8 +61,6 @@ const Home = () => {
     { tools: "Github" },
     { tools: "Lucide" },
   ];
-
-  const navigate = useNavigate();
 
   return (
     <Box sx={{ position: "relative", minHeight: "100vh" }}>
