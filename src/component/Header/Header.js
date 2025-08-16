@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ProfilePicture from "../../Picture/ProfilePicture.jpeg";
 import { useNavigate, useLocation } from "react-router-dom";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 
 const pages = [
   { link: "/", page: "Home" },
@@ -150,8 +151,16 @@ const Header = () => {
               ))}
             </Box>
             <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Profile Picture">
+              <Tooltip title="Payroll Software is under the development">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <NotificationsActiveIcon
+                    fontSize="large"
+                    sx={{ color: "white" }}
+                  />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Profile Picture">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, ml: 2 }}>
                   <Avatar alt="Profile Picture" src={ProfilePicture} />
                 </IconButton>
               </Tooltip>
