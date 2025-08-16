@@ -340,6 +340,7 @@ const Home = () => {
                   display: "flex",
                   alignItems: "center", // vertically center
                   justifyContent: "space-between", // horizontally center
+                  gap: 2,
                 }}
               >
                 <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
@@ -349,7 +350,7 @@ const Home = () => {
                   sx={{ backgroundColor: "white", fontWeight: "bold" }}
                   onClick={() =>
                     window.open(
-                      "https://pensionbeecalculator.netlify.app/",
+                      "https://cfspensioncalculator.netlify.app/",
                       "_blank"
                     )
                   }

@@ -93,7 +93,12 @@ const Projects = () => {
                 mt: 3,
               }}
             >
-              <Armchair color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />
+              <Armchair
+                color="#1976d2"
+                sx={{
+                  ml: 0,
+                }}
+              />
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
                 Iraa Interiors – Your Dream Home Start Here!
               </Typography>
