@@ -16,6 +16,7 @@ import { Button, Grid, Typography, Paper, Box, Divider } from "@mui/material";
 import { FileUser, Hospital, FolderClosed, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 import { Armchair } from "lucide-react";
+import PersonIcon from "@mui/icons-material/Person";
 
 const Home = () => {
   const Icons = [
@@ -46,13 +47,15 @@ const Home = () => {
 
   const Skills = [
     { frontend: "React JS" },
-    { frontend: "Next JS" },
+    // { frontend: "Next JS" },
     { frontend: "Javascript" },
     { frontend: "HTML" },
     { frontend: "CSS" },
     { backend: "Express JS" },
     { backend: "Node JS" },
-    { backend: "MySQL" },
+    { database: "MySQL" },
+    { database: "PL/SQL" },
+    { database: "SQL" },
     { responsive: "Material UI" },
     { responsive: "Bootstrap" },
     { tools: "Postman" },
@@ -101,7 +104,8 @@ const Home = () => {
               variant="h5"
               sx={{ color: "white", mb: 4, fontStyle: "" }}
             >
-              Frontend Developer | Creating Innovative Digital Solutions
+              SQL / PL/SQL Developer | React & Node.js | Payroll & HRMS Systems
+              Implementation{" "}
             </Typography>
             <Grid
               container
@@ -173,16 +177,14 @@ const Home = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Experienced{" "}
-              <span style={{ color: "#1976d2", fontWeight: "bold" }}>
-                Frontend Developer
-              </span>{" "}
-              with over 2+ years of expertise in designing and delivering
-              scalable web solutions across industries such as real estate,
-              hospitality, and textiles. Proficient in modern technologies
-              including React.js, Next.js, and Node.js, with a strong focus on
-              creating intuitive user interfaces and optimizing backend
-              performance for seamless user experiences.
+              Full-Stack Developer and Implementation Engineer with 3 years of
+              experience, specializing in SQL and PL/SQL along with Node.js,
+              Express.js, SQL Server, MySQL, RESTful APIs, and modern frontend
+              technologies. My expertise lies in database design, query
+              optimization, and backend development, combined with building
+              secure, high-performance, and scalable applications. I am
+              passionate about continuously learning and quickly mastering new
+              technologies.
             </Typography>
           </Paper>
         </Grid>
@@ -232,9 +234,7 @@ const Home = () => {
             elevation={8}
             sx={{
               padding: "20px",
-              //   textAlign: "center",
               backgroundColor: "rgba(13, 29, 58, 0.8)",
-              //   backdropFilter: "blur(10px)",
               borderRadius: "15px",
             }}
           >
@@ -243,7 +243,6 @@ const Home = () => {
                 display: "flex",
                 alignItems: "center",
                 gap: "10px",
-                // justifyContent: "center",
                 ml: 2,
                 mb: 2,
               }}
@@ -280,10 +279,43 @@ const Home = () => {
                 }}
               >
                 <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                  React Portfolio - (UK)
+                </Typography>
+
+                <Button
+                  sx={{ backgroundColor: "white", fontWeight: "bold" }}
+                  onClick={() =>
+                    window.open("https://saitalla.netlify.app/", "_blank")
+                  }
+                >
+                  Link
+                </Button>
+              </Box>
+
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                July 2025 - July 2025
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{ display: "flex", gap: 1, flexDirection: "column", mt: 4 }}
+            >
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Freelancing Projects
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center", // vertically center
+                  justifyContent: "space-between", // horizontally center
+                }}
+              >
+                <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                   Iraa Interiors – Your Dream Home Start Here!
                 </Typography>
 
                 <Button
+                  sx={{ backgroundColor: "white", fontWeight: "bold" }}
                   onClick={() =>
                     window.open("https://iraainteriors.netlify.app/", "_blank")
                   }
@@ -314,6 +346,7 @@ const Home = () => {
                   Pension Calculator - Finance Planning (UK)
                 </Typography>
                 <Button
+                  sx={{ backgroundColor: "white", fontWeight: "bold" }}
                   onClick={() =>
                     window.open(
                       "https://pensionbeecalculator.netlify.app/",
@@ -381,76 +414,79 @@ const Home = () => {
               </Typography>
             </Box>
 
-            {["Frontend", "Backend", "Tools", "Responsive"].map((category) => (
-              <Grid
-                container
-                key={category}
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  gap: "10px",
-                  marginTop: "5px",
-                }}
-              >
-                <Divider />
-
-                <Typography
+            {["Database", "Frontend", "Backend", "Tools", "Responsive"].map(
+              (category) => (
+                <Grid
+                  container
+                  key={category}
+                  spacing={2}
                   sx={{
-                    ml: 4,
-                    color: "#1976d2",
-                    fontSize: "25px",
-                    mt: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    gap: "10px",
+                    marginTop: "5px",
                   }}
                 >
-                  {category}
-                </Typography>
+                  <Divider />
 
-                {Skills.filter((item) => item[category.toLowerCase()]).map(
-                  (item, index) => (
-                    <Box
-                      item
-                      key={index}
-                      sx={{ display: "flex", justifyContent: "space-between" }}
-                    >
-                      <Typography
+                  <Typography
+                    sx={{
+                      ml: 4,
+                      color: "#1976d2",
+                      fontSize: "25px",
+                      mt: 1,
+                    }}
+                  >
+                    {category}
+                  </Typography>
+
+                  {Skills.filter((item) => item[category.toLowerCase()]).map(
+                    (item, index) => (
+                      <Box
+                        item
+                        key={index}
                         sx={{
-                          ml: 4,
-                          color: "white",
+                          display: "flex",
+                          justifyContent: "space-between",
                         }}
                       >
-                        {item[category.toLowerCase()]}
-                      </Typography>
+                        <Typography
+                          sx={{
+                            ml: 4,
+                            color: "white",
+                          }}
+                        >
+                          {item[category.toLowerCase()]}
+                        </Typography>
 
-                      <Typography
-                        sx={{
-                          mr: 3,
-                          color: "white",
-                          mb: 1,
-                        }}
-                      >
-                        {(category === "Frontend" &&
-                          item[category.toLowerCase()] === "Next JS") ||
-                        (category === "Tools" &&
-                          (item[category.toLowerCase()] === "Github" ||
-                            item[category.toLowerCase()] === "Postman")) ||
-                        (category === "Backend" &&
-                          (item[category.toLowerCase()] === "Node JS" ||
-                            item[category.toLowerCase()] === "Express JS"))
-                          ? "Intermediate"
-                          : category === "Frontend" ||
-                            category === "Backend" ||
-                            category === "Tools" ||
-                            category === "Responsive"
-                          ? "Advanced"
-                          : "Beginner"}
-                      </Typography>
-                    </Box>
-                  )
-                )}
-              </Grid>
-            ))}
+                        <Typography
+                          sx={{
+                            mr: 3,
+                            color: "white",
+                            mb: 1,
+                          }}
+                        >
+                          {item[category.toLowerCase()] === "React JS" ||
+                          item[category.toLowerCase()] === "Next JS" ||
+                          item[category.toLowerCase()] === "Javascript" ||
+                          item[category.toLowerCase()] === "Node JS" ||
+                          item[category.toLowerCase()] === "Express JS" ||
+                          item[category.toLowerCase()] === "Postman" ||
+                          item[category.toLowerCase()] === "PL/SQL" ||
+                          item[category.toLowerCase()] === "SQL" ||
+                          item[category.toLowerCase()] === "MySQL" ||
+                          item[category.toLowerCase()] === "Bootstrap" ||
+                          item[category.toLowerCase()] === "Material UI"
+                            ? "intermediate "
+                            : "Advanced"}
+                        </Typography>
+                      </Box>
+                    )
+                  )}
+                </Grid>
+              )
+            )}
           </Paper>
         </Grid>
 
@@ -489,6 +525,33 @@ const Home = () => {
                 gap: "10px",
                 ml: 2,
                 mb: 2,
+              }}
+            >
+              <PersonIcon sx={{ fontSize: "25px", ml: 0, color: "#1976d2" }} />
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
+                React Portfolio - (UK)
+              </Typography>
+            </Box>
+
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Developed a responsive React portfolio using React.js and Material
+              UI (Grid and Components) with features such as downloading resumes
+              and showcasing projects.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Implemented dynamic functionality allowing users to add, delete,
+              and update projects as needed. The same functionality is also
+              available on the Resume page.
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                ml: 2,
+                mb: 2,
+                mt: 3,
               }}
             >
               <Armchair color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />

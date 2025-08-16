@@ -71,8 +71,8 @@ const AboutMe = () => {
               Hi, I'm Sachin Vishwakarma!
             </Typography>
             <Typography variant="h5" sx={{ color: "white", mb: 5 }}>
-              A Frontend Developer with a knack for building scalable web
-              solutions and enhancing user experiences.
+              A SQL / PL/SQL Developer | React & Node.js | Payroll & HRMS
+              Implementation Analyst
             </Typography>
 
             <Grid
@@ -144,14 +144,14 @@ const AboutMe = () => {
             </Box>
 
             <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
-              Experienced{" "}
-              <span style={{ color: "#1976d2" }}>Frontend Developer</span> with
-              over 2+ years of expertise in designing and delivering scalable
-              web solutions across industries such as real estate, hospitality,
-              and textiles. Proficient in modern technologies including
-              React.js, Next.js, and Node.js, with a strong focus on creating
-              intuitive user interfaces and optimizing backend performance for
-              seamless user experiences.
+              I am a Full-Stack Developer and Implementation Engineer with 3
+              years of experience, specializing in SQL and PL/SQL along with
+              Node.js, Express.js, SQL Server, MySQL, RESTful APIs, and modern
+              frontend technologies. My expertise lies in database design, query
+              optimization, and backend development, combined with building
+              secure, high-performance, and scalable applications. I am
+              passionate about continuously learning and quickly mastering new
+              technologies.
             </Typography>
           </Paper>
         </Grid>

@@ -6,13 +6,15 @@ import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackg
 const Skills = () => {
   const Skills = [
     { frontend: "React JS" },
-    { frontend: "Next JS" },
+    // { frontend: "Next JS" },
     { frontend: "Javascript" },
     { frontend: "HTML" },
     { frontend: "CSS" },
     { backend: "Express JS" },
     { backend: "Node JS" },
-    { backend: "MySQL" },
+    { database: "MySQL" },
+    { database: "PL/SQL" },
+    { database: "SQL" },
     { responsive: "Material UI" },
     { responsive: "Bootstrap" },
     { tools: "Postman" },
@@ -63,76 +65,79 @@ const Skills = () => {
               </Typography>
             </Box>
 
-            {["Frontend", "Backend", "Tools", "Responsive"].map((category) => (
-              <Grid
-                container
-                key={category}
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  gap: "10px",
-                  marginTop: "5px",
-                }}
-              >
-                <Divider />
-
-                <Typography
+            {["Database", "Frontend", "Backend", "Tools", "Responsive"].map(
+              (category) => (
+                <Grid
+                  container
+                  key={category}
+                  spacing={2}
                   sx={{
-                    ml: 4,
-                    color: "#1976d2",
-                    fontSize: "25px",
-                    mt: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    gap: "10px",
+                    marginTop: "5px",
                   }}
                 >
-                  {category}
-                </Typography>
+                  <Divider />
 
-                {Skills.filter((item) => item[category.toLowerCase()]).map(
-                  (item, index) => (
-                    <Box
-                      item
-                      key={index}
-                      sx={{ display: "flex", justifyContent: "space-between" }}
-                    >
-                      <Typography
+                  <Typography
+                    sx={{
+                      ml: 4,
+                      color: "#1976d2",
+                      fontSize: "25px",
+                      mt: 1,
+                    }}
+                  >
+                    {category}
+                  </Typography>
+
+                  {Skills.filter((item) => item[category.toLowerCase()]).map(
+                    (item, index) => (
+                      <Box
+                        item
+                        key={index}
                         sx={{
-                          ml: 4,
-                          color: "white",
+                          display: "flex",
+                          justifyContent: "space-between",
                         }}
                       >
-                        {item[category.toLowerCase()]}
-                      </Typography>
+                        <Typography
+                          sx={{
+                            ml: 4,
+                            color: "white",
+                          }}
+                        >
+                          {item[category.toLowerCase()]}
+                        </Typography>
 
-                      <Typography
-                        sx={{
-                          mr: 3,
-                          mb: 1,
-                          color: "white",
-                        }}
-                      >
-                        {(category === "Frontend" &&
-                          item[category.toLowerCase()] === "Next JS") ||
-                        (category === "Tools" &&
-                          (item[category.toLowerCase()] === "Github" ||
-                            item[category.toLowerCase()] === "Postman")) ||
-                        (category === "Backend" &&
-                          (item[category.toLowerCase()] === "Node JS" ||
-                            item[category.toLowerCase()] === "Express JS"))
-                          ? "Intermediate"
-                          : category === "Frontend" ||
-                            category === "Backend" ||
-                            category === "Tools" ||
-                            category === "Responsive"
-                          ? "Advanced"
-                          : "Beginner"}
-                      </Typography>
-                    </Box>
-                  )
-                )}
-              </Grid>
-            ))}
+                        <Typography
+                          sx={{
+                            mr: 3,
+                            mb: 1,
+                            color: "white",
+                          }}
+                        >
+                          {item[category.toLowerCase()] === "React JS" ||
+                          item[category.toLowerCase()] === "Next JS" ||
+                          item[category.toLowerCase()] === "Javascript" ||
+                          item[category.toLowerCase()] === "Node JS" ||
+                          item[category.toLowerCase()] === "Express JS" ||
+                          item[category.toLowerCase()] === "Postman" ||
+                          item[category.toLowerCase()] === "PL/SQL" ||
+                          item[category.toLowerCase()] === "SQL" ||
+                          item[category.toLowerCase()] === "MySQL" ||
+                          item[category.toLowerCase()] === "Bootstrap" ||
+                          item[category.toLowerCase()] === "Material UI"
+                            ? "intermediate "
+                            : "Advanced"}
+                        </Typography>
+                      </Box>
+                    )
+                  )}
+                </Grid>
+              )
+            )}
           </Paper>
         </Grid>
       </Grid>

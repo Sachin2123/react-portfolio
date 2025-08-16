@@ -8,6 +8,7 @@ import { Grid, Typography, Paper, Box } from "@mui/material";
 import { FolderClosed, Hospital, Calculator } from "lucide-react";
 import AnimatedBackground from "../../component/AnimatedBackground/AnimatedBackground";
 import { Armchair } from "lucide-react";
+import PersonIcon from "@mui/icons-material/Person";
 
 const Projects = () => {
   return (
@@ -60,6 +61,33 @@ const Projects = () => {
                 gap: "10px",
                 ml: 2,
                 mb: 2,
+              }}
+            >
+              <PersonIcon sx={{ fontSize: "25px", ml: 0, color: "#1976d2" }} />
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 0 }}>
+                React Portfolio - (UK)
+              </Typography>
+            </Box>
+
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Developed a responsive React portfolio using React.js and Material
+              UI (Grid and Components) with features such as downloading resumes
+              and showcasing projects.
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Implemented dynamic functionality allowing users to add, delete,
+              and update projects as needed. The same functionality is also
+              available on the Resume page.
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                ml: 2,
+                mb: 2,
+                mt: 3,
               }}
             >
               <Armchair color="#1976d2" sx={{ fontSize: "25px", ml: 0 }} />

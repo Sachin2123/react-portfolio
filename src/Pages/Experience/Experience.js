@@ -64,6 +64,38 @@ const Experience = () => {
               <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
                 Freelancing Projects
               </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center", // vertically center
+                  justifyContent: "space-between", // horizontally center
+                }}
+              >
+                <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+                  React Portfolio - (UK)
+                </Typography>
+
+                {/* <Button
+                  sx={{ backgroundColor: "white", fontWeight: "bold" }}
+                  onClick={() =>
+                    window.open("https://saitalla.netlify.app/", "_blank")
+                  }
+                >
+                  Link
+                </Button> */}
+              </Box>
+
+              <Typography variant="subtitle2" sx={{ color: "white", ml: 2 }}>
+                July 2025 - July 2025
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{ display: "flex", gap: 1, flexDirection: "column", mt: 4 }}
+            >
+              <Typography variant="h6" sx={{ color: "#1976d2", ml: 2 }}>
+                Freelancing Projects
+              </Typography>
               <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
                 Iraa Interiors – Your Dream Home Start Here!
               </Typography>
