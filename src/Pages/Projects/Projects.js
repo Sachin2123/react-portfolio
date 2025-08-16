@@ -79,6 +79,9 @@ const Projects = () => {
               and update projects as needed. The same functionality is also
               available on the Resume page.
             </Typography>
+            <Typography variant="subtitle1" sx={{ color: "white", ml: 2 }}>
+              Developed for all the devices (Desktop, Tablet, Mobile)
+            </Typography>
 
             <Box
               sx={{
