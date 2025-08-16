@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ProfilePicture from "../../Picture/ProfilePicture.jpeg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const pages = [
   { link: "/", page: "Home" },
@@ -31,6 +31,7 @@ const Header = () => {
   // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -50,6 +51,9 @@ const Header = () => {
   const handleNavigation = (link) => {
     // console.log(data);
     navigate(link);
+
+    // Mobile View
+    // console.log(link);
   };
 
   return (
@@ -98,7 +102,10 @@ const Header = () => {
                 {pages.map((item, index) => (
                   <MenuItem key={index} onClick={handleCloseNavMenu}>
                     <Typography
-                      onClick={() => handleNavigation(item.link)}
+                      onClick={() => {
+                        handleNavigation(item.link);
+                        // console.log(item);
+                      }}
                       sx={{ textAlign: "center" }}
                     >
                       {item.page}
@@ -122,12 +129,16 @@ const Header = () => {
                   onClick={() => {
                     handleCloseNavMenu();
                     handleNavigation(item.link);
+                    // console.log(item.page);
                   }}
                   sx={{
                     my: 2,
-                    color: "white",
+                    // color: "white",
                     display: "block",
                     fontWeight: "600",
+                    color: location.pathname === item.link ? "black" : "white",
+                    backgroundColor:
+                      location.pathname === item.link ? "white	" : "transparent",
                   }}
                 >
                   {item.page}
