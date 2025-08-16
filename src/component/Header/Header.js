@@ -106,7 +106,11 @@ const Header = () => {
                         handleNavigation(item.link);
                         // console.log(item);
                       }}
-                      sx={{ textAlign: "center" }}
+                      sx={{
+                        textAlign: "center",
+                        color:
+                          location.pathname === item.link ? "black" : "grey",
+                      }}
                     >
                       {item.page}
                     </Typography>
